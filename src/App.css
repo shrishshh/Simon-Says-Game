@@ -1,0 +1,122 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+  margin: 1.5rem;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+  color: #333;
+}
+
+h2.status-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.line-one, .line-two {
+  display: flex;
+  justify-content: center;
+}
+
+.yellow {
+  background-color: #f99b45;
+}
+
+.red {
+  background-color: #d95980;
+}
+
+.green {
+  background-color: #63aac0;
+}
+
+.purple {
+  background-color: #819ff9;
+}
+
+.flash {
+  background-color: white;
+}
+
+.userflash {
+  background-color: greenyellow;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    height: 150px;
+    width: 150px;
+    margin: 0.8rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2.status-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    height: 100px;
+    width: 100px;
+    margin: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+}
